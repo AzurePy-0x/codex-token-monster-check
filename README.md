@@ -1,13 +1,15 @@
 <div align="center">
-  <img src="assets/token_monster.png" alt="CoDeX Token Monster" width="400">
+  <img src="./assets/token_monster_cf.png" alt="CoDeX Token Monster" width="400">
   <h1>CoDeX Token Monster Diagnostic</h1>
   <p><strong>A standalone, read-only diagnostic tool for identifying Cloudflare-related session blocks and history loss in OpenAI CoDeX.</strong></p>
 </div>
 
+
 ---
 
-## 👹 The Problem: The "Token Monster" Loop
-Certain users on the ChatGPT Plus plan may experience a persistent loop where Cloudflare session clearance expires. Instead of prompting for re-authentication, the CoDeX app's background processes (compaction and sync) capture Cloudflare's CAPTCHA HTML and attempt to process it as valid data.
+## The Problem: The "Token Monster" Loop
+Certain users on the ChatGPT Plus plan may experience a persistent loop where Cloudflare session clearance expires. Instead of prompting for re-authentication, the CoDeX app's background processes (compaction and sync) capture Cloudflare's CAPTCHA HTML and attempt to process it as valid data. 
+This issue is tracked in the official OpenAI CoDeX repository: **[GitHub Issue #17880](https://github.com/openai/codex/issues/17880)**.
 
 ### Impact Summary
 | Symptom | Severity | Description |
