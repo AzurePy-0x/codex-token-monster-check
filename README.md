@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/token_monster.png" alt="CoDeX Token Monster" width="400">
+  <img src="./assets/token_monster_cf.png" alt="CoDeX Token Monster" width="400">
   <h1>CoDeX Token Monster Diagnostic</h1>
   <p><strong>A standalone, read-only diagnostic tool for identifying Cloudflare-related session blocks and history loss in OpenAI CoDeX.</strong></p>
 </div>
