@@ -5,16 +5,17 @@
     Author: Pi (https://github.com/AzurePy-0x)
 
 .DESCRIPTION
-    v1.2: Added distinction between Plugin Sync blocks and History Compaction loops.
+    v1.3: Added StrictMode, enhanced error handling, and "Read-Only" assurance markers.
 #>
+
+# --- 1. Initialization & Security Policy ---
+Set-StrictMode -Version Latest
+$ErrorActionPreference = "SilentlyContinue"
 
 param (
     [Parameter(Mandatory=$false)]
     [string]$CodexPath = (Join-Path $HOME ".codex")
 )
-
-# Standard error handling
-$ErrorActionPreference = "SilentlyContinue"
 
 Write-Host "`n==========================================" -ForegroundColor Cyan
 Write-Host " CoDeX - CloudFlare - Token Monster Scanner " -ForegroundColor Cyan
