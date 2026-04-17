@@ -1,12 +1,12 @@
-# CodeXMonster Diagnostic Scanner v2.2
-# Purpose: Final Forensic detection of Cloudflare WAF interference and recursive "Token Tax"
+# Recursive Context Poisoning (Token Monster) Diagnostic Scanner v2.5
+# Purpose: Final Forensic detection of Cloudflare WAF interference and context loop
 # Usage: Run in PowerShell as Administrator
 
-$Version = "2.2"
+$Version = "2.5"
 $LogPath = "$env:USERPROFILE\.codex\logs_2.sqlite"
 $IssueLink = "https://github.com/openai/codex/issues/17880"
 
-Write-Host "--- CodeXMonster Diagnostic v$Version ---" -ForegroundColor Cyan
+Write-Host "--- Recursive Context Poisoning Diagnostic v$Version ---" -ForegroundColor Cyan
 Write-Host "Calculating Sanitized Bi-Directional Token Waste..."
 
 # 1. Environment Check
